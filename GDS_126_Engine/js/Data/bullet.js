@@ -24,13 +24,13 @@ var bulletData ={
 	states:{ 
     	idle:
 		{
-			fps:60,
+			fps:2,
 			cycle:true,
 			frames:
 			[
 				
 				{width:17, height:17, startX:2*19, startY:0},
-				{width:19, height:19, startX:3*19, startY:0}
+				{width:17, height:17, startX:3*19, startY:0}
 				
 			]
 		}
