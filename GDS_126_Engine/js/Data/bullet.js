@@ -21,18 +21,16 @@ var bulletData ={
 	info:{
 		src:`images/Bullet.png`
 	},
-	states:{
-		//The idle animation 
+	states:{ 
     	idle:
 		{
-			fps:1,
+			fps:60,
 			cycle:true,
 			frames:
 			[
-				{width:23, height:17, startX:0, startY:0},
-				{width:23, height:17, startX:1*23, startY:0},
-				{width:23, height:17, startX:2*23, startY:0},
-				{width:23, height:17, startX:3*23, startY:0}
+				
+				{width:17, height:17, startX:2*19, startY:0},
+				{width:19, height:19, startX:3*19, startY:0}
 				
 			]
 		}
