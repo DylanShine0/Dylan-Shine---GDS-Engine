@@ -99,18 +99,15 @@ var t1 = false;
 
 gameStates[`level1`] = function()
 {
-	t1 = true;
-	if(t1 == true)
-	{
-		console.log("PLAY BACKGROUND MUSIC")
-		sounds.play('bg', 0)
-	}
+	
+	console.log("PLAYING BACKGROUND MUSIC")
 	
 
 
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
 	{
-		
+		sounds.play(`backgroundMusic`, 0)
+	
 		wiz.changeState(`idle`)
 		
 	}
