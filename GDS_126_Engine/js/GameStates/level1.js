@@ -94,11 +94,6 @@ for(let i=0; i<100; i++)
 
 /*------------------^^BULLET STUFF^^----------------------*/
 
-//Background music
-
-sounds.play(`bg`,0)  //jump sound
-
-//------------------------------//
 
 gameStates[`level1`] = function()
 {
