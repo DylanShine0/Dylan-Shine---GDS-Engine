@@ -94,7 +94,6 @@ for(let i=0; i<100; i++)
 
 /*------------------^^BULLET STUFF^^----------------------*/
 
-var t1 = false;
 
 
 gameStates[`level1`] = function()
