@@ -94,6 +94,12 @@ for(let i=0; i<100; i++)
 
 /*------------------^^BULLET STUFF^^----------------------*/
 
+//Background music
+
+sounds.play(`bg`,0)  //jump sound
+
+//------------------------------//
+
 gameStates[`level1`] = function()
 {
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
@@ -133,12 +139,15 @@ gameStates[`level1`] = function()
 		}
 		
 	}
-	if(keys[`W`] && wiz.canJump )
+	if(keys[`W`] )
 	{
-		wiz.canJump = false;
-		wiz.vy = wiz.jumpHeight;
-		wiz.changeState(`jump`)
-		sounds.play(`jump`,0)
+		if(wiz.canJump)
+		{
+			sounds.play(`jump`,1100)  //jump sound
+			wiz.changeState(`jump`)
+			wiz.canJump = false;
+			wiz.vy = wiz.jumpHeight;
+		}
 	}
 	shotTimer--;
 	if(shotTimer <=0)
@@ -155,6 +164,7 @@ gameStates[`level1`] = function()
 		if(canShoot)
 		{
 			wiz.changeState(`attack`)
+			sounds.play(`shoot`,0) //shoot sound
 			shotTimer = shotDelay
 			//console.log(`Boom`)
 
@@ -164,7 +174,7 @@ gameStates[`level1`] = function()
 			bullets[currentBullet].y = wiz.y + 20;
 			bullets[currentBullet].dir = wiz.dir;
 			
-			sounds.play(`shoot`,1)
+			
 
 			currentBullet++;
 			if(currentBullet>=bullets.length)
