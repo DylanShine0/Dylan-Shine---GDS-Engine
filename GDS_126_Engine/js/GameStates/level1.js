@@ -101,6 +101,11 @@ gameStates[`level1`] = function()
 	{
 		wiz.changeState(`idle`)
 	}
+
+	if(keys['W'] || keys['S'] || keys['D'] || keys['A'])
+	{
+		sound.play('bg', 0)
+	}
 	
 	
 	if(keys[`S`])
