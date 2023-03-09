@@ -97,10 +97,12 @@ for(let i=0; i<100; i++)
 
 gameStates[`level1`] = function()
 {
+	if(wiz.xy > 0 || wiz < 0){	sounds.play('bg', 0)}
+
 	
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
 	{
-		sounds.play('bg', 0)
+		
 		wiz.changeState(`idle`)
 		
 	}
