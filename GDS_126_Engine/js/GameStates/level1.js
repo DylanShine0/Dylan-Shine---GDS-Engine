@@ -102,11 +102,11 @@ gameStates[`level1`] = function()
 	
 	console.log("PLAYING BACKGROUND MUSIC")
 	
-
+	
 
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
 	{
-		sounds.play(`backgroundMusic`, 0)
+		
 	
 		wiz.changeState(`idle`)
 		
