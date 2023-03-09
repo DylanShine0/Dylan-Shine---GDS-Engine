@@ -94,11 +94,18 @@ for(let i=0; i<100; i++)
 
 /*------------------^^BULLET STUFF^^----------------------*/
 
+var t1 = false;
+
 
 gameStates[`level1`] = function()
 {
-	sounds.play('bg', 0)
-	sounds.play('bg', 0)
+	t1 = true;
+	if(t1 == true)
+	{
+		console.log("PLAY BACKGROUND MUSIC")
+		sounds.play('bg', 0)
+	}
+	
 
 
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
