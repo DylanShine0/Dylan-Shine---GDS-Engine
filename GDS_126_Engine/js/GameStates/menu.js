@@ -2,8 +2,8 @@
 This file contains all of the code for the Main Menu
 ----------------------------------*/
 
-var startButton = new GameObject({width:200});
-//startButton.img.src="images/mrt.jpg"
+var startButton = new GameObject({width:200, height:100});
+startButton.img.src="images/mrt.jpg"
 
 startButton.hitBoxWidth=800
 console.log(startButton.collisionPoints.right)
@@ -16,6 +16,8 @@ menuBackground.height=canvas.height
 
 gameStates[`menu`] =function(){
 
+
+	
 	
 	//Makes the button clickable
 	if(startButton.overlap(mouse))
@@ -40,6 +42,11 @@ gameStates[`menu`] =function(){
 	
 	menuBackground.drawStaticImage();
 	startButton.render()
+
+	//context.font = "40px Georgia"
+	//context.fillStyle = "black";
+	//context.fillText("BEGIN", canvas.width/2, canvas.height/2);
+	
 }
 	
 	
