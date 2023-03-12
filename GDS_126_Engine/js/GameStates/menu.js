@@ -15,22 +15,24 @@ menuBackground.img.src = "images/MenuBackgroundSmall1024x512 VERSION 2.png"
 menuBackground.width=canvas.width
 menuBackground.height=canvas.height
 
-var startButton = new GameObject({/*width:100, height:50*/});
-startButton.img.src="images/StartButton.jpg"
-startButton.width=100
-startButton.height=50
-startButton.hitBoxWidth=100  //800
+var startButton = new GameObject(/*{width:100, height:50}*/);
+startButton.img.src="images/StartButton.png"
+startButton.hitBoxWidth = 100  //800
+startButton.x = canvas.width/2;
+startButton.y = canvas.height/1.5;
+startButton.width = 100;
+startButton.height = 50;
 
-var ctx = canvas.getContext(`2d`);
+var startButtonH = new GameObject(/*{width:100, height:50}*/);
+startButtonH.img.src="images/StartButtonH.png"
+startButtonH.hitBoxWidth = 100  //800
+startButtonH.x = canvas.width/2;
+startButtonH.y = canvas.height/1.5;
+startButtonH.width = 100;
+startButtonH.height = 50;
 
-ctx.drawImage("GDS_126_Engine/images/StartButton.png", canvas.height/2, canvas.height/2, 100, 50)
-
-ctx.font = "40px Georgia"
-ctx.fillStyle = "black";
-ctx.fillText("BEGIN", canvas.width/2, canvas.height/2-100);
 
 gameStates[`menu`] =function(){
-
 
 	//Makes the button clickable
 	if(startButton.overlap(mouse))
@@ -42,15 +44,20 @@ gameStates[`menu`] =function(){
 			gameStates.changeState(`level1`)
 		}
 		//Hover Effect Graffic
-		startButton.color = `Orange`
+		//startButton.color = `Orange`
+		startButtonH.drawStaticImage() //orange
 	}
 	else
 	{
 		//Default Button Graphic
-		startButton.color = `White`
+		//startButton.color = `White`
+		startButtonH.drawStaticImage() //white
 	}
 	menuBackground.drawStaticImage();
+	
 	startButton.render()
+	//startButton.drawStaticImage()
+
 }
 	
 	
