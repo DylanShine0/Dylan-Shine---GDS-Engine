@@ -51,7 +51,7 @@ gameStates[`menu`] =function(){
 	{
 		//Default Button Graphic
 		//startButton.color = `White`
-		startButtonH.drawStaticImage() //white
+		startButton.drawStaticImage() //white
 	}
 	menuBackground.drawStaticImage();
 	
