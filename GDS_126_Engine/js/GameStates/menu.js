@@ -16,14 +16,19 @@ menuBackground.width=canvas.width
 menuBackground.height=canvas.height
 
 var startButton = new GameObject(/*{width:100, height:50}*/);
-startButton.img.src="images/StartButton.png"
+startButton.img.src = "images/StartButton.png"
 startButton.hitBoxWidth = 100  //800
 startButton.x = canvas.width/2;
 startButton.y = canvas.height/1.5;
 startButton.width = 100;
 startButton.height = 50;
 
-
+var Title = new GameObject(/*{width:100, height:50}*/);
+Title.img.src = "images/GameTitle.png"
+Title.x = canvas.width/2;
+Title.y = canvas.height/1.5;
+Title.width = 1024;
+Title.height = 512;
 
 
 gameStates[`menu`] =function(){
