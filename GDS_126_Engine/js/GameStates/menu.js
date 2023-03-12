@@ -23,7 +23,7 @@ startButton.hitBoxWidth=100  //800
 
 var ctx = canvas.getContext(`2d`);
 
-ctx.drawImage("images/StartButton.png", canvas.height/2, canvas.height/2, 100, 50)
+ctx.drawImage("GDS_126_Engine/images/StartButton.png", canvas.height/2, canvas.height/2, 100, 50)
 
 ctx.font = "40px Georgia"
 ctx.fillStyle = "black";
