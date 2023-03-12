@@ -21,14 +21,16 @@ startButton.width=100
 startButton.height=50
 startButton.hitBoxWidth=100  //800
 
+var ctx = canvas.getContext(`2d`);
 
+ctx.drawImage("images/StartButton.jpg", canvas.height/2, canvas.height/2, 100, 50)
+
+ctx.font = "40px Georgia"
+ctx.fillStyle = "black";
+ctx.fillText("BEGIN", canvas.width/2, canvas.height/2-100);
 
 gameStates[`menu`] =function(){
-	
-	var ctx = canvas.getContext(`2d`);
-	ctx.font = "40px Georgia"
-	ctx.fillStyle = "black";
-	ctx.fillText("BEGIN", canvas.width/2, canvas.height/2-100);
+
 
 	//Makes the button clickable
 	if(startButton.overlap(mouse))
