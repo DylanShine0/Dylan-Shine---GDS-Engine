@@ -39,7 +39,7 @@ gameStates[`menu`] =function(){
 	{
 		//Default Button Graphic
 		startButton.color = `White`
-		context.fillText("BEGIN", canvas.width/2, canvas.height/2);
+		context.fillText("BEGIN", canvas.width/2, canvas.height/2-100);
 		
 	}
 	
