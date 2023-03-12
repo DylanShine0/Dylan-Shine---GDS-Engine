@@ -56,7 +56,7 @@ gameStates[`menu`] =function(){
 	menuBackground.drawStaticImage();
 	
 	startButton.render()
-	//startButton.drawStaticImage()
+	startButton.drawStaticImage()
 
 }
 	
