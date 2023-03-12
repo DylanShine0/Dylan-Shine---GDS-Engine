@@ -16,6 +16,7 @@ menuBackground.height=canvas.height
 
 gameStates[`menu`] =function(){
 
+	
 	//Makes the button clickable
 	if(startButton.overlap(mouse))
 	{
@@ -29,12 +30,12 @@ gameStates[`menu`] =function(){
 		}
 
 		//Hover Effect Graffic
-		startButton.color = `yellow`
+		startButton.color = `Orange`
 	}
 	else
 	{
 		//Default Button Graphic
-		startButton.color = `red`
+		startButton.color = `White`
 	}
 	
 	menuBackground.drawStaticImage();
