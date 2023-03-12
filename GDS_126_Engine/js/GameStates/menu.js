@@ -17,7 +17,8 @@ menuBackground.height=canvas.height
 gameStates[`menu`] =function(){
 
 
-	
+	context.font = "40px Georgia"
+	context.fillStyle = "black";
 	
 	//Makes the button clickable
 	if(startButton.overlap(mouse))
@@ -37,16 +38,16 @@ gameStates[`menu`] =function(){
 	else
 	{
 		//Default Button Graphic
-		//startButton.color = `White`
-		startButton.img.src="images/StartButton.jpg"
+		startButton.color = `White`
+		context.fillText("BEGIN", canvas.width/2, canvas.height/2);
+		
 	}
 	
 	menuBackground.drawStaticImage();
 	startButton.render()
 
-	//context.font = "40px Georgia"
-	//context.fillStyle = "black";
-	//context.fillText("BEGIN", canvas.width/2, canvas.height/2);
+	
+	
 	
 }
 	
