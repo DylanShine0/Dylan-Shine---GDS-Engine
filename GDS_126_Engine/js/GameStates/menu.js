@@ -23,16 +23,12 @@ startButton.y = canvas.height/1.5;
 startButton.width = 100;
 startButton.height = 50;
 
-var startButtonH = new GameObject(/*{width:100, height:50}*/);
-startButtonH.img.src="images/StartButtonH.png"
-startButtonH.hitBoxWidth = 100  //800
-startButtonH.x = canvas.width/2;
-startButtonH.y = canvas.height/1.5;
-startButtonH.width = 100;
-startButtonH.height = 50;
+
 
 
 gameStates[`menu`] =function(){
+
+	menuBackground.drawStaticImage();
 
 	//Makes the button clickable
 	if(startButton.overlap(mouse))
@@ -44,16 +40,15 @@ gameStates[`menu`] =function(){
 			gameStates.changeState(`level1`)
 		}
 		//Hover Effect Graffic
-		//startButton.color = `Orange`
-		startButtonH.drawStaticImage() //orange
+		startButton.color = `Orange`
+		
 	}
 	else
 	{
 		//Default Button Graphic
-		//startButton.color = `White`
-		startButton.drawStaticImage() //white
+		startButton.color = `White`
+		
 	}
-	menuBackground.drawStaticImage();
 	
 	startButton.render()
 	startButton.drawStaticImage()
