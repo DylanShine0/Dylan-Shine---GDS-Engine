@@ -15,9 +15,9 @@ menuBackground.img.src = "images/MenuBackgroundSmall1024x512 VERSION 2.png"
 menuBackground.width=canvas.width
 menuBackground.height=canvas.height
 
-var startButton = new GameObject(/*{width:100, height:50}*/);
+var startButton = new GameObject({width:100, height:50});
 startButton.img.src = "images/StartButton.png"
-startButton.hitBoxWidth = 100  //800
+startButton.hitBoxWidth = 100
 startButton.x = canvas.width/2;
 startButton.y = canvas.height/1.3;
 startButton.width = 100;
@@ -46,7 +46,7 @@ gameStates[`menu`] =function(){
 			gameStates.changeState(`level1`)
 		}
 		//Hover Effect Graffic
-		sounds.play("introSound",0,true)
+		sounds.play("introSound",0)
 		startButton.color = `Orange`
 		
 	}
