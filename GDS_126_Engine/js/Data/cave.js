@@ -2,13 +2,13 @@ var x=false;
 var caveData ={
 	info:{
 		layout:[
-			[0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,2],
-			[2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],
-			[2,x,x,7,x,x,7,x,x,x,x,x,x,7,7,x,7,7,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-			[2,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-			[5,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-			[7,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-			[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3],
+			[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,0,6,6,6,6,6,6,6,6,6,6,x,x,x,x,x],
+			[x,x,x,x,x,x,x,x,x,x,x,x,0,6,6,6,6,6,6,7,7,x,x,x,x,x,x,x,x,x,6,x,x,x,x],
+			[x,x,x,x,x,x,x,x,0,6,6,6,7,7,7,7,7,7,x,x,x,x,x,x,x,x,x,x,x,x,3,6,x,x,x],
+			[0,6,6,6,6,6,6,6,7,x,7,7,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,6,x,x],
+			[x,x,7,x,7,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,6,x],
+			[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,6],
+			[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,6],
 			[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x]
 		],
 		src:`images/bg2.png`,
@@ -67,13 +67,14 @@ var caveData ={
 	var caveBackData ={
 		info:{
 			layout:[
-			[0,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8],
-			[x,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8],
-			[x,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,8],
-			[x,8,8,8,8,3,3,3,3,3,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,8,8],
-			[3,8,8,8,8,3,x,x,x,3,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,8,8,8],
-			[3,8,8,8,8,3,3,3,3,3,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,8,8,8,8],
-			[3,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,8,8,8,8,8],
+			[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x],
+			[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,6,6,6,3,3,3,3,3,3,3,3,3,3,3,6,x,x,x,x],
+			[x,x,x,x,x,x,x,x,x,x,x,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,3,6,x,x,x],
+			[x,x,x,x,x,8,8,8,8,8,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,3,6,x,x],
+			[3,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,3,6,x],
+			[3,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,8,8,3,6],
+			[3,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,3,3,x,x,3,3,8,8,8,8,8,8,8,8,8,8,8,8,3,6],
+			//Hidden layer here subsituted by ground.png
 			],
 			src:`images/bg2.png`,
 		},
@@ -83,16 +84,14 @@ var caveData ={
 		var caveHitData={
 			info:{
 				layout:[
-					[0,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,2],
-					[2,8,1,8,1,1,8,1,1,1,1,1,1,8,8,1,8,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],
-					[2,x,x,8,x,x,8,x,x,x,x,x,x,8,8,x,1,1,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-					[6,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2],
-					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,2]
-					
-					
+					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,0,6,6,6,6,6,6,6,6,6,6,x,x,x,x,8],
+					[x,x,x,x,x,x,x,x,x,x,x,x,0,6,6,6,6,6,6,x,x,x,x,x,x,x,x,x,x,x,6,x,x,x,8],
+					[x,x,x,x,x,x,x,x,0,6,6,6,7,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,6,x,x,8],
+					[0,6,6,6,0,6,6,6,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,6,x,8],
+					[7,x,7,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,6,8],
+					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,6],
+					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,6],
+					[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x]//Ground
 				],
 				src:`images/bg2.png`,
 			},
