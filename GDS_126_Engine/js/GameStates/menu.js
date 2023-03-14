@@ -40,13 +40,13 @@ gameStates[`menu`] =function(){
 	{
 		if(mouse.pressed)
 		{
-			
+			sounds.play("introSound",0)
 			sounds.play(`backgroundMusic`, 0, true)
 			//Changes to the game state
 			gameStates.changeState(`level1`)
 		}
 		//Hover Effect Graffic
-		sounds.play("introSound",0)
+		
 		startButton.color = `Orange`
 		
 	}
