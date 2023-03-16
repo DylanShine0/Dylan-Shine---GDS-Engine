@@ -78,8 +78,8 @@ bg.img.src=`images/bgfull.png`
 
 var bullets=[]
 var canShoot=true;
-var shotTimer = 0;
-var shotDelay = 21;
+var shotTimer = 5;
+var shotDelay = 45;
 var currentBullet = 0;
 
 for(let i=0; i<100; i++)
