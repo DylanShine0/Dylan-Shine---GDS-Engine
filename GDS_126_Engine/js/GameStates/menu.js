@@ -41,7 +41,7 @@ gameStates[`menu`] =function(){
 		if(mouse.pressed)
 		{
 			sounds.play("introSound",0)
-			sounds.play(`backgroundMusic`, 0, true)
+			sounds.play(`BACKmusicFix`, 0, true)
 			//Changes to the game state
 			gameStates.changeState(`level1`)
 		}
